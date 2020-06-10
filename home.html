@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='it'>
+  <head>
+    <meta charset='utf-8'/>
+<title>Mattia Pieretti's Portfolio</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'/>
+<link rel='stylesheet' href='stylescss.css'/>
+<meta http-equipv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+
+<body>
+
+<header class='header clearfix'>
+<a href='' class='header_logo'>MattiaPieretti</a>
+<a href='' class='header_icon-bar'>
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
+<ul class='header_menu'>
+    <li class='header_menu_item'><a href='#Progetti'>Progetti</a></li>
+  <li class='header_menu_item'><a href='#Aboutme'>Chi sono</a></li>
+  <li class='header_menu_item'><a href='#Contacts'>Contatti</a></li>
+</ul>
+</header>
+
+<section class='cover'>
+  <div class='cover_caption'>
+    <div class='cover_caption_copy'>
+<h1>Product Designer</h1>
+<h2>UX/UI Student</h2>
+<a href='#Progetti' class='button'>Progetti</a>
+    </div>
+  </div>
+</section>
+
+<section class='cards clearfix'>
+  <section class='cards'>
+    <a name='Progetti'></a>
+    <div class='card'>
+      <img class='card_image' src='render-telecomando-pier_portfolio_nuovo.png' alt='Progetto Telecomando Smart'>
+      <div class='card_copy'>
+      <h3>Y'ALL - Telecomando universale</h3>
+      <p>Telecomando ergonomico dotato di touch screen, ricarica wireless e ingresso AUX che permette di ascoltare tramite i propri auricolari la sorgente audio collegata.</p>
+    <a href='https://www.behance.net/gallery/37915787/YALL-Universal-Remote-Control' target='_blank'
+    class='button1'>Scopri ora!</a>
+    </div>
+  </div>
+
+    <div class='card'>
+      <a name='Progetti'></a>
+      <img class='card_image' src='fixed.png' alt='Progetto Telecomando Smart'>
+      <div class='card_copy'>
+      <h3>Ash Bike</h3>
+      <p>Bici a scatto fisso ecocompatibile. Il telaio è in legno frassino, assemblato con colla di pesce. Reggisella e manubrio sono in Alluminio 7005 e la forcella in carbonio.</p>
+      <a href='https://www.behance.net/gallery/37248913/ASH-Bike' target='_blank'
+      class='button1'>Scopri ora!</a>
+    </div>
+  </div>
+
+    <div class='card'>
+      <a name='Progetti'></a>
+      <img class='card_image' src='appmockup.png' alt='Progetto Telecomando Smart'>
+      <div class='card_copy'>
+      <h3>Utopic - Prototipazione App</h3>
+      <p>Prototipazione dell’applicazione Utopic al fine di simulare il flusso di navigazione. Progettazione delle icone e delle linee guida necessarie per il corretto utilizzo del brand.</p>
+      <a href='https://www.behance.net/gallery/46809299/Utopic' target='_blank'
+      class='button1'>Scopri ora!</a>
+    </div>
+  </div>
+</section>
+
+  <section class='banner clearfix'>
+    <a name='Aboutme'></a>
+    <img class='banner_image' src='facempnerd.png' alt='Logo MP'>
+    <div class='banner_copy'>
+      <div class='banner_copy_text'>
+      <h4>Piacere di conoscerti</h4>
+      <h1>Ciao,</br>
+        sono Mattia Pieretti</h1>
+      <h4>Nel lontano 2016 mi sono laureato in Design del Prodotto Industriale.
+      </br>
+        Da 3 anni mi occupo della progettazione e della comunicazione grafica di sistemi di sicurezza presso la <a href='https://www.viro.it/it-it/'>Viro S.p.A.</a>
+      </br>
+      Ho deciso di intraprendere un percorso con i ragazzi di <a href='https://www.start2impact.it/'>Start2Impact</a>
+    </br>
+    per restare al passo con i tempi e completare la mia formazione come grafico.
+    </br>
+    Sto intraprendendo il percorso di UX/UI Design per approfondire meglio il ramo della grafica che più mi appassiona.</h4>
+  <h2>Scopri tutti i miei progetti!</h2>
+  <a href='https://www.behance.net/MattiaPieretti' target='_blank'
+  class='button2'>Portfolio</a>
+</div>
+</div>
+
+<section class='form'>
+      <a name='Contacts'></a>
+  <div class='content'>
+    <h4>Cos'hai in mente?</h4>
+    <h1>Parliamone!</h1>
+    <h4>Se hai qualche progetto in mente o vuoi semplicemente metterti in contatto con me,
+    </br>
+       non esitare a farlo, compilando il form sottostante,</h4>
+    <form action='dati.php' method='post'>
+      <ul>
+      <li class='uno'>
+        <label for='name'>Nome</label>
+        <input type='text' name='nome' class='testo' required>
+      </li>
+      <li class='due'>
+        <label for='email'>Email</label>
+        <input type='email' name='email' class='testo' required>
+      </li>
+      <li class='tre'>
+        <label for='text'>Messaggio</label>
+        <textarea name='testo' id='testo'></textarea>
+      </li>
+      <li class='quattro'>
+        <input type='submit' value='Invia' class='button2'>
+      </li>
+     </ul>
+   </form>
+ </div>
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+   $(".header_icon-bar").click(function(e){
+     $(".header_menu").toggleClass('is-open');
+     e.preventDefault();
+
+   });
+});
+
+</script>
+
+        </body>
+        </html>
